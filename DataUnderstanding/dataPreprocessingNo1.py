@@ -1,12 +1,8 @@
+import pandas as pd
+import glob as gl
+import pathlib
 import json
 import os
-import pathlib
-import glob as gl
-from sys import path_hooks
-import sys
-from unicodedata import name
-import numpy as np
-import pandas as pd
 
 """ This program orginise the json files from MeMo's 
 repo and save it in a csv
