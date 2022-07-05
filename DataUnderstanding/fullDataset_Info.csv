@@ -1,0 +1,11 @@
+,libary,Total_NumClasses,Total_NumMeth,Total_NumMeth_With_Comments,Total_NumMeth_WithOut_Comments,Total_NumSentences,TMRs
+0,colt,13,348,268,80,577,21
+1,elastic,19,299,184,115,260,14
+2,gs,9,187,154,33,381,11
+3,guava,78,1347,1118,229,2813,81
+4,gwt,18,273,253,20,433,44
+5,hibernate,13,151,113,38,188,5
+6,jdk,36,1175,1106,69,4393,77
+7,math,29,727,372,355,766,34
+8,sbes-guava,40,621,392,229,1094,11
+9,weka,19,530,514,16,858,6

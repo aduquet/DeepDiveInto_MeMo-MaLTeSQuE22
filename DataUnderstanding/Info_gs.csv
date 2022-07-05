@@ -1,0 +1,8 @@
+,Libary,Class,Total_NumMeth,Sentences_min,Sentences_avg,Sentences_max,Total_sentences,TMRs
+0,gs,org.graphstream.graph.Node,40,1,4.25,7,170,0
+1,gs,org.graphstream.graph.Element,28,1,2.21,8,62,6
+2,gs,org.graphstream.graph.Path,24,1,1.17,3,28,4
+3,gs,org.graphstream.ui.geom.Vector3,24,1,1.04,2,25,0
+4,gs,org.graphstream.ui.geom.Vector2,23,1,1.04,2,24,0
+5,gs,org.graphstream.graph.Structure,8,1,4.25,6,34,0
+6,gs,org.graphstream.graph.Edge,7,1,5.43,8,38,30

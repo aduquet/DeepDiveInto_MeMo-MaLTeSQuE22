@@ -1,0 +1,9 @@
+,library,jsonFileName,signature,name,targetClass,equivalence.comment,equivalence.kind,equivalence.condition
+0,weka,weka.core.BinarySparseInstance_goal.json,valueSparse(int indexOfIndex),valueSparse,weka.core.BinarySparseInstance,Returns an instance's attribute value in internal format. Does exactly the same thing as value() if applied to an Instance.,FreeText,methodResultID==receiverObjectID.value(args[0])
+1,weka,weka.core.DenseInstance_goal.json,numValues(),numValues,weka.core.DenseInstance,Returns the number of values present. Always the same as numAttributes().,FreeText,methodResultID==(receiverObjectClone.numAttributes())
+2,weka,weka.core.Instance_goal.json,attributeSparse(int indexOfIndex),attributeSparse,weka.core.Instance,Returns the attribute with the given index in the sparse representation. Same as attribute(int) for a DenseInstance.,FreeText,if(receiverObjectID instanceof DenseInstance){methodResultID.equals(receiverObjectClone.attribute(args[0]))}
+3,weka,weka.core.Instance_goal.json,valueSparse(int indexOfIndex),valueSparse,weka.core.Instance,"Returns an instance's attribute value in internal format, given an index in the sparse representation. Same as value(int) for a DenseInstance.",FreeText,if(receiverObjectID instanceof DenseInstance){methodResultID==(receiverObjectClone.value(args[0]));}
+4,weka,weka.experiment.Stats_goal.json,add(double value),add,weka.experiment.Stats,"Adds a value to the observed values It's equivalent to add(value, 1)",FreeText,"receiverObjectClone.add(args[0],1);
+receiverObjectClone.equals(receiverObjectID)"
+5,weka,weka.experiment.Stats_goal.json,subtract(double value),subtract,weka.experiment.Stats,"Removes a value to the observed values (no checking is done that the value being removed was actually added). It's equivalent to subtract(value, 1)",FreeText,"receiverObjectClone.subtract(args[0],1);
+receiverObjectClone.equals(receiverObjectID)"

@@ -1,3 +1,4 @@
+from numpy import NaN
 import pandas as pd
 import glob as gl
 import pathlib
@@ -16,9 +17,9 @@ def process(input_path, output_name):
     if os.path.exists(input_path):
         datasetsFiles = gl.glob(input_path + '\\*')
 
-    dataKey = ['signature', 'name', 'containingClass', 'targetClass', 'isVarArgs', 'parameters', 'equivalence']
-    dataSubKey_containingClass = ['qualifiedName', 'name', 'isArray']
-    dataSubKey_equivalence = ['member', 'comment', 'kind', 'condition']
+    # dataKey = ['signature', 'name', 'containingClass', 'targetClass', 'isVarArgs', 'parameters', 'equivalence']
+    # dataSubKey_containingClass = ['qualifiedName', 'name', 'isArray']
+    # dataSubKey_equivalence = ['member', 'comment', 'kind', 'condition']
 
     aux = []
     for pathfile in datasetsFiles:
@@ -39,8 +40,11 @@ def process(input_path, output_name):
                             'targetClass':i['targetClass'],
                             'equivalence.comment':i['equivalence']['comment'],
                             'equivalence.kind':i['equivalence']['kind'],
-                            'equivalence.condition':i['equivalence']['condition']}
-                    
+                            'equivalence.condition':i['equivalence']['condition'],
+                            'EMR':0}
+                    if i['equivalence']['condition'] != '':
+                        mainDic['EMR'] = 1
+                        
                     aux.append(mainDic)
 
     df = pd.DataFrame(aux, index=None)
@@ -74,7 +78,4 @@ if __name__ == '__main__':
                     process(inputPath, output)
             except print('\n ************* \n\n Check you path! it seems that the file\path does not exist \n\n ************* \n'):
                 pass
-    
-        
-
 main()

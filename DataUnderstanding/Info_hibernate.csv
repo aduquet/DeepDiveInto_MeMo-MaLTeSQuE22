@@ -1,0 +1,14 @@
+,Libary,Class,Total_NumMeth,Sentences_min,Sentences_avg,Sentences_max,Total_sentences,TMRs
+0,hibernate,org.hibernate.internal.util.collections.ConcurrentReferenceHashMap,28,1,1.93,5,54,2
+1,hibernate,org.hibernate.internal.util.collections.BoundedConcurrentHashMap,25,1,1.84,5,46,2
+2,hibernate,org.hibernate.criterion.Example,10,1,1.4,2,14,0
+3,hibernate,org.hibernate.TypeHelper,8,1,1.25,2,10,0
+4,hibernate,org.hibernate.engine.jdbc.spi.ResultSetReturn,7,1,1.86,3,13,0
+5,hibernate,org.hibernate.boot.jaxb.internal.stax.BufferedXMLEventReader,6,1,1.17,2,7,0
+6,hibernate,org.hibernate.internal.util.xml.BufferedXMLEventReader,6,1,1.17,2,7,1
+7,hibernate,org.hibernate.dialect.pagination.SQLServer2005LimitHandler,5,1,2.0,3,10,0
+8,hibernate,org.hibernate.engine.jdbc.connections.spi.MultiTenantConnectionProvider,5,1,1.4,3,7,0
+9,hibernate,org.hibernate.resource.jdbc.ResourceRegistry,5,1,1.2,2,6,0
+10,hibernate,org.hibernate.engine.spi.SubselectFetch,4,1,1.75,3,7,2
+11,hibernate,org.hibernate.loader.plan.exec.spi.EntityReferenceAliases,2,2,2.5,3,5,0
+12,hibernate,org.hibernate.loader.plan.spi.BidirectionalEntityReference,2,1,1.0,1,2,1
